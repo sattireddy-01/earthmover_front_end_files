@@ -1,0 +1,58 @@
+<?php
+/**
+ * Database Connection File
+ * Place this file at: C:\xampp\htdocs\Earth_mover\api\config\database.php
+ * 
+ * Make sure to:
+ * 1. Update $dbname to match your actual database name
+ * 2. Update $username and $password if you changed MySQL credentials
+ */
+
+// Database configuration
+$host = 'localhost';
+$dbname = 'earthmover';  // Change this to your database name
+$username = 'root';       // Default XAMPP username
+$password = '';           // Default XAMPP password (empty by default)
+
+// Create connection using mysqli
+$conn = new mysqli($host, $username, $password, $dbname);
+
+// Check connection
+if ($conn->connect_error) {
+    // Return JSON error instead of dying with HTML
+    header('Content-Type: application/json');
+    die(json_encode([
+        'success' => false,
+        'message' => 'Database connection failed: ' . $conn->connect_error
+    ]));
+}
+
+// Set charset to utf8 for proper character encoding
+$conn->set_charset("utf8");
+
+// Return connection (important for require_once)
+return $conn;
+?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

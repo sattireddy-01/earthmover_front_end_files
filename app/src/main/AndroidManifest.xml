@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" 
+        android:maxSdkVersion="32" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Eathmover"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".ChooseRoleActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".UserSignupActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".OperatorSignupActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".AdminSignupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ConfirmResetPasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminOperatorVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMachinePricingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLiveBookingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminReportsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorDashboardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorEditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorFoundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorContactActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorArrivalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorSearchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkTimerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorEarningsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SetAvailabilityActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NavigationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewBookingRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExcavatorsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Jcb3dxModelsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DozerModelsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ServiceHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MachineDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnterWorkDurationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AutoPriceEstimatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".WorkSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FinalPriceBreakdownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UPIPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentSuccessfulActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RatingFeedbackActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ContactOptionsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LiveTrackingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorLicenseDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorWaitingApprovalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OperatorBookingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UserBookingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BookingConfirmationActivity"
+            android:exported="false" />
+        
+        <!-- FileProvider for camera images -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

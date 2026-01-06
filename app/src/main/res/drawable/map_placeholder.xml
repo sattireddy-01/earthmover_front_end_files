@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="400dp"
+    android:height="400dp"
+    android:viewportWidth="400"
+    android:viewportHeight="400">
+    
+    <!-- Background (light green) -->
+    <path
+        android:fillColor="#E8F5E9"
+        android:pathData="M0,0 L400,0 L400,400 L0,400 Z" />
+    
+    <!-- Water body (blue) -->
+    <path
+        android:fillColor="#2196F3"
+        android:pathData="M50,50 Q100,80 150,50 T250,50 Q300,80 350,50 L350,150 Q300,120 250,150 T150,150 Q100,120 50,150 Z" />
+    
+    <!-- Mountain/Terrain (brown) -->
+    <path
+        android:fillColor="#BCAAA4"
+        android:pathData="M200,200 L250,150 L300,200 L350,180 L400,200 L400,400 L200,400 Z" />
+    
+    <!-- Road (gray) - using filled rectangle -->
+    <path
+        android:fillColor="#757575"
+        android:pathData="M0,296 L400,296 L400,304 L0,304 Z" />
+    
+    <!-- Place marker 1 (pink) - simplified circle -->
+    <path
+        android:fillColor="#E91E63"
+        android:pathData="M 120,100 A 8,8 0 0,1 136,100 A 8,8 0 0,1 120,100 Z" />
+    
+    <!-- Place marker 2 (green) - simplified circle -->
+    <path
+        android:fillColor="#4CAF50"
+        android:pathData="M 100,300 A 8,8 0 0,1 116,300 A 8,8 0 0,1 100,300 Z" />
+    
+</vector>
+

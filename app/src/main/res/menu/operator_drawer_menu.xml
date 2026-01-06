@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_set_available"
+        android:icon="@drawable/ic_available"
+        android:title="Set Available" />
+    <item
+        android:id="@+id/nav_navigate_to_user"
+        android:icon="@drawable/ic_navigate"
+        android:title="Navigate to User" />
+    <item
+        android:id="@+id/nav_start_work"
+        android:icon="@drawable/ic_play_work"
+        android:title="Start My Work" />
+</menu>
+

@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C2C"
+    tools:context=".NavigationActivity">
+
+    <!-- Bottom Panel (defined first for layout_above reference) -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardCornerRadius="20dp"
+        app:cardUseCompatPadding="true"
+        app:cardBackgroundColor="#2C2C2C"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Draggable Indicator -->
+            <View
+                android:layout_width="40dp"
+                android:layout_height="4dp"
+                android:layout_gravity="center_horizontal"
+                android:background="#666666"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Vehicle Image -->
+            <ImageView
+                android:id="@+id/iv_vehicle"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/jcb3dx_1"
+                android:scaleType="centerCrop"
+                android:background="#3C3C3C"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Construction Vehicle" />
+
+            <!-- Action Buttons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_navigate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:backgroundTint="#FFC400"
+                    android:text="Navigate"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="16dp" />
+
+                <Button
+                    android:id="@+id/btn_call_user"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:backgroundTint="#3C3C3C"
+                    android:text="Call User"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:padding="16dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- Map View Container -->
+    <FrameLayout
+        android:id="@+id/map_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom_panel"
+        android:background="#E8F5E9">
+
+        <!-- Search Bar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal"
+            android:background="@drawable/search_bar_background"
+            android:padding="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_search"
+                android:tint="#666666"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Search location..."
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <!-- Zoom Controls -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|top"
+            android:layout_margin="16dp"
+            android:layout_marginTop="64dp"
+            android:orientation="vertical"
+            android:background="@drawable/zoom_controls_background">
+
+            <Button
+                android:id="@+id/btn_zoom_in"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="#3C3C3C"
+                android:padding="0dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#666666" />
+
+            <Button
+                android:id="@+id/btn_zoom_out"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:backgroundTint="#3C3C3C"
+                android:padding="0dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#666666" />
+
+            <Button
+                android:id="@+id/btn_center_map"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="📍"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:backgroundTint="#3C3C3C"
+                android:padding="0dp"
+                android:minHeight="0dp"
+                android:minWidth="0dp" />
+
+        </LinearLayout>
+
+        <!-- Map Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/map"
+            android:scaleType="centerCrop"
+            android:contentDescription="Map View" />
+
+    </FrameLayout>
+
+</RelativeLayout>
+

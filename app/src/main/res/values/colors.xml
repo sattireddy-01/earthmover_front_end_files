@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="online_green">#4CAF50</color>
+    <color name="offline_red">#F44336</color>
+    <color name="toggle_unselected">#3C3C3C</color>
+    
+    <!-- Booking Status Colors -->
+    <color name="colorPending">#FFC400</color>
+    <color name="colorPendingText">#000000</color>
+    <color name="colorCompleted">#4CAF50</color>
+    <color name="colorCompletedText">#FFFFFF</color>
+    <color name="colorAccepted">#2196F3</color>
+    <color name="colorAcceptedText">#FFFFFF</color>
+    <color name="colorDefault">#757575</color>
+    <color name="colorDefaultText">#FFFFFF</color>
+
+    <!-- New High-Fidelity Design Colors -->
+    <color name="stat_total">#5C6BC0</color>
+    <color name="stat_pending">#00695C</color>
+    <color name="stat_active">#6D4C41</color>
+    <color name="gradient_teal">#009688</color>
+    <color name="gradient_blue">#1A237E</color>
+    <color name="soft_red">#EF5350</color>
+    <color name="icon_tint">#7C4DFF</color>
+    <color name="text_grey">#757575</color>
+    <color name="background_light">#F5F5F7</color>
+    <color name="booking_blue">#1A237E</color>
+    <color name="booking_teal">#0097A7</color>
+    
+    <!-- Fix Missing Colors -->
+    <color name="surface_color">#2C2C2C</color>
+    <color name="text_secondary">#A0A0A0</color>
+</resources>
